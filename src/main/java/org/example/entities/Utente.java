@@ -1,12 +1,7 @@
 package org.example.entities;
-
 import jakarta.persistence.*;
-
 import java.time.LocalDate;
 import java.util.List;
-
-
-
 
 
 @Entity
@@ -76,6 +71,9 @@ public class Utente {
     public void setNumeroTessera(int numeroTessera) {
         this.numeroTessera = numeroTessera;
     }
+
+
+
 
     @Override
     public String toString() {

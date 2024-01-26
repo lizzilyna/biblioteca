@@ -87,6 +87,9 @@ public class Prestito {
         this.dataRestituzione = dataRestituzione;
     }
 
+
+    ;
+
     @Override
     public String toString() {
         return "Prestito{" +
@@ -97,5 +100,9 @@ public class Prestito {
                 ", scadenzaPrestito=" + scadenzaPrestito +
                 ", dataRestituzione=" + dataRestituzione +
                 '}';
+    }
+
+    private LocalDate scadenzaPrestito(LocalDate attivazionePrestito) {
+        return scadenzaPrestito=attivazionePrestito.plusDays(30);
     }
 }
