@@ -9,8 +9,11 @@ public class Rivista extends Elemento{
 
     }
 
-        public Rivista(String titolo, LocalDate anno, int pagine, Periodicita periodicita) {
+   
+
+    public Rivista(String titolo, int anno, int pagine, Periodicita periodicita) {
         super(titolo, anno, pagine);
         this.periodicita = periodicita;
     }
 }
+

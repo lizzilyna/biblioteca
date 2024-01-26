@@ -11,15 +11,15 @@ import java.time.LocalDate;
         @Id @GeneratedValue (strategy = GenerationType.AUTO)
         private int isdn;
         private String titolo;
-        private LocalDate anno;
+        private int anno;
         private int pagine;
 
     public Elemento() {
     }
 
-    public Elemento(String titolo, LocalDate anno, int pagine) {
+    public Elemento(String titolo, int anno, int pagine) {
         this.titolo = titolo;
-        this.anno = anno;
+        this.anno=anno;
         this.pagine = pagine;
     }
 
@@ -36,11 +36,11 @@ import java.time.LocalDate;
         this.titolo = titolo;
     }
 
-    public LocalDate getAnno() {
+    public int getAnno() {
         return anno;
     }
 
-    public void setAnno(LocalDate anno) {
+    public void setAnno(int anno) {
         this.anno = anno;
     }
 

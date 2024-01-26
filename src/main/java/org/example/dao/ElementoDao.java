@@ -18,13 +18,18 @@ public class ElementoDao {
     public void inserisciElemento(Elemento e){
         EntityTransaction et = em.getTransaction();
         et.begin();
-        em.persist(e);//metti questa entità nel persistence context
+        em.persist(e);
         et.commit();
     }
 
     public Elemento getById (int id){
         return em.find(Elemento.class, id);
 
+    }
+
+    public void close (){
+        em.close();
+        emf.close();
     }
 
 }

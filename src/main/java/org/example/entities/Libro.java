@@ -1,6 +1,5 @@
 package org.example.entities;
 
-import java.time.LocalDate;
 
 public class Libro extends Elemento{
     private String autore;
@@ -11,7 +10,7 @@ public class Libro extends Elemento{
 
 
 
-    public Libro(String titolo, LocalDate anno, int pagine, String autore, String genere) {
+    public Libro(String titolo, int anno, int pagine, String autore, String genere) {
         super(titolo, anno, pagine);
         this.autore = autore;
         this.genere = genere;

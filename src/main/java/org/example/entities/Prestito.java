@@ -102,7 +102,7 @@ public class Prestito {
                 '}';
     }
 
-    private LocalDate scadenzaPrestito(LocalDate attivazionePrestito) {
+    public LocalDate calcolaScadenzaPrestito(LocalDate attivazionePrestito) {
         return scadenzaPrestito=attivazionePrestito.plusDays(30);
     }
 }
